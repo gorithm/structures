@@ -21,9 +21,9 @@ func New() *Stack {
 }
 
 // Push inserts a new value into the stack.
-func (s *Stack) Push(val interface{}) {
+func (s *Stack) Push(v interface{}) {
 	s.top = &node{
-		value: val,
+		value: v,
 		prev:  s.top,
 	}
 	s.size++
