@@ -6,6 +6,7 @@ type (
 		top  *node
 		size int
 	}
+
 	node struct {
 		value interface{}
 		prev  *node
