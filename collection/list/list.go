@@ -1,5 +1,5 @@
 package list
 
-// List does stuff.
+// List organizes data in a sequential, ordered manner.
 type List interface {
 }

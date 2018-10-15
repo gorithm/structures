@@ -1,6 +1,6 @@
 package collection
 
-// Collection provides a uniform way of accessing data from lists, plots, and sets.
+// Collection provides a class of operations to manipulate lists, plots (maps), and sets.
 type Collection interface {
 	Contains(v interface{}) bool
 	ContainsAll(c Collection) bool
