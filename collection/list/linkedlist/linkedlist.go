@@ -17,6 +17,15 @@ type (
 	}
 )
 
+// New returns a pointer to a new linked list.
+func New() *LinkedList {
+	return &LinkedList{
+		head: nil,
+		tail: nil,
+		size: 0,
+	}
+}
+
 func newNode(v interface{}) *node {
 	return &node{
 		value: v,
