@@ -4,8 +4,8 @@ package list
 type Iterator interface {
 	HasNext() bool
 	HasPrevious() bool
-	Next() interface{}
-	NextIndex() int
-	Previous() interface{}
-	PreviousIndex() int
+	Next() (interface{}, error)
+	NextIndex() (int, error)
+	Previous() (interface{}, error)
+	PreviousIndex() (int, error)
 }

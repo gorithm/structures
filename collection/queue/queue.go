@@ -8,7 +8,7 @@ package queue
 // in most implementations, insert operations cannot fail.
 type Queue interface {
 	Enqueue(v interface{})
-	Dequeue() interface{}
-	Peek() interface{}
+	Dequeue() (interface{}, error)
+	Peek() (interface{}, error)
 	IsEmpty() bool
 }
